@@ -1,0 +1,154 @@
+﻿header {
+    list-style-type: none;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0px;
+    background-color: white;
+}
+
+.navbar {
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+    padding-left: 25px;
+    padding-top: 9px;
+    padding-bottom: 8px
+}
+
+.icon {
+    float: left;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+}
+
+nav {
+    float: left;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    padding-top: 13px;
+    margin-left: 70px;
+    padding-bottom: 13px;
+}
+
+nav a {
+    color: azure;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: slategrey;
+}
+
+.page-content{
+    position:center;
+    font-size: 22px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.big-class {
+    font-size: 35px;
+    list-style: none;
+}
+
+.little-class{
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.disclosure{
+    padding: 1px;
+    width: 100%;
+    color: azure;
+    text-align: center;
+    background-color: black;
+    font-size: 14px;
+}
+
+.fake-website{
+    font-size: 40px;
+}
+
+h1{
+    font-size: 45px;
+}
+
+h2{
+    font-size: 45px;
+}
+
+#yogi-quotes {
+    position: absolute;
+    bottom: 50px;
+    width: 99%;
+    text-align: center;
+}
+
+#side-panel-left {
+    width: 45%;
+    float: left;
+    text-align: left;
+    padding-left: 5%;
+    line-height: 72px;
+}
+
+#side-panel-right {
+    padding-top: 22px;
+    width: 45%;
+    float: left;
+    text-align: left;
+    padding-left: 10px;
+    line-height: 47px;
+
+}
+
+#platform-list {
+    line-height: 25px;
+    list-style-type: none;
+}
+
+.contact-us{
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+}
+
+.cringy_slogan{
+    padding-top: 30px;
+}
+
+.container{
+    height: 40px;
+}
+
+.timer {
+    font-size: 30px;
+    line-height: 2px;
+}
+
+#box-area {
+    margin: 0 auto;
+    border: solid;
+    width: 65%;
+    height: 170px;
+    overflow: auto;
+}

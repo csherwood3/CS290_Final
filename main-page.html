@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="mystyle.css" />
+    <meta charset="utf-8" />
+    <title>Main Page - Explo Energy</title>
+</head>
+
+<body>
+    <header>
+        <script src="script.js"></script>
+        <div class="navbar">
+            <!--This navbar was designed with the assistance of Kevin Powell's video: https://www.youtube.com/watch?v=FEmysQARWFU-->
+            <a href="easter-egg-page.html">
+                <img src="assets/logo_small.png" onmouseover="hoverLogo(this);" onmouseout="unhoverLogo(this); " class="logo" />
+            </a>
+            <a href="https://instagram.com/explo_energy">
+                <img src="assets/instagram_icon.png" onmouseover="hoverInsta(this)" onmouseout="unhoverInsta(this)" class="icon" />
+            </a>
+            <a href="https://twitter.com/EnergyExplo">
+                <img src="assets/twitter_icon.png" onmouseover="hoverTwitter(this)" onmouseout="unhoverTwitter(this)" class="icon" />
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="main-page.html">HOME</a></li>
+                    <li><a href="about-page.html">ABOUT</a></li>
+                    <li><a href="shop-page.html">SHOP</a></li>
+                    <li><a href="contact-page.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-content">
+        <h1 >THE LAST ENERGY SUPPLEMENT YOU WILL EVER DRINK.</h1>
+        <br />
+        <div class="can">
+            <img src="assets/group_shot.png" alt="cyan_can" class="can" />
+        </div>
+        <p><img src="assets/cringy_slogan.png" /></p>
+        <ul class="big-class">
+            <li>• NO sugar.</li>
+            <li>• NATURALLY flavored.</li>
+            <li>• B-Vitamins.</li>
+            <li>• CoQ-10.</li>
+            <li>• HIGH-grade CBD.</li>
+            <li>• CRAZY flavors.</li>
+            <li>• MADE in AMERICA.</li>
+            <li>• ONLY 20 calories PER CAN.</li>
+        </ul>
+        <p class="little-class">
+            <script type="text/javascript">
+                let cringyQuotes = {
+                    0: "This is it. Take charge of your destiny.",
+                    1: "You've come to a fork in the road. Take it.",
+                    2: "Your future is looking bright.",
+                    3: "Get some.",
+                    4: "Conquer your inner weakling.",
+                    5: "You deserve this.",
+                    6: "The time has come. Don't let this pass you by."
+                }
+
+                function makeCringyQuote() {
+                    let number = Math.floor(Math.random() * 7);
+                    cringyQuote = cringyQuotes[number];
+                    document.write(cringyQuote);
+                }
+
+                makeCringyQuote();
+            </script>
+        </p>
+    </div>
+    
+    <br />
+
+    <div class="disclosure">
+        <p>FDA AND LEGAL DISCLOSURE:</p>
+        <p>
+            This product is not intended for use or sale to persons under the age of
+            18. This product should not be used if you are pregnant or nursing, have
+            underlying medical conditions, have a dairy allergy, live near power lines,
+            or are otherwise sensitive to caffeine. These statements have not been
+            evaluated by the FDA. This product is not intended to diagnose, treat, cure
+            or prevent any disease. By using this site, you agree to follow the Privacy
+            Policy and all Terms & Conditions printed on this site. Void Where
+            Prohibited by Law.
+        </p>
+        <p>
+            *Cannabidiol (CBD) is a naturally-occurring constituent of the industrial 
+            hemp plant. We do not sell or distribute any products that are in violation 
+            of the United States Controlled Substances Act (US.CSA). EXPLO® does sell and 
+            distribute hemp based products.
+        </p>
+    </div>
+
+</body>
+
+
+</html>

@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="mystyle.css" />
+    <meta charset="utf-8" />
+    <title>Shop - Explo Energy</title>
+</head>
+
+<body>
+    <header>
+        <script src="script.js"></script>
+        <div class="navbar">
+            <!--This navbar was designed with the assistance of Kevin Powell's video: https://www.youtube.com/watch?v=FEmysQARWFU-->
+            <a href="easter-egg-page.html">
+                <img src="assets/logo_small.png" onmouseover="hoverLogo(this);" onmouseout="unhoverLogo(this); " class="logo" />
+            </a>
+            <a href="https://instagram.com/explo_energy">
+                <img src="assets/instagram_icon.png" onmouseover="hoverInsta(this)" onmouseout="unhoverInsta(this)" class="icon" />
+            </a>
+            <a href="https://twitter.com/EnergyExplo">
+                <img src="assets/twitter_icon.png" onmouseover="hoverTwitter(this)" onmouseout="unhoverTwitter(this)" class="icon" />
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="main-page.html">HOME</a></li>
+                    <li><a href="about-page.html">ABOUT</a></li>
+                    <li><a href="shop-page.html">SHOP</a></li>
+                    <li><a href="contact-page.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="page-content">
+
+        <h1>Coming July 4, 2021.</h1>
+        <div class="timer">
+
+            <!--This is the countdown for the company's launch. This code was directly inspired by w3schools
+        countdown timer tutorial found here: https://www.w3schools.com/howto/howto_js_countdown.asp-->
+
+            <p id="days"></p>
+            <p id="hours"></p>
+            <p id="minutes"></p>
+            <p id="seconds"></p>
+
+        </div>
+        <p id="live"></p>
+
+        <script>
+            // Set the launch date:
+            var countDownDate = new Date("July 7, 2021").getTime();
+
+            // Set the second function:
+            var second = setInterval(function () {
+
+                // Today's time:
+                var now = new Date().getTime();
+
+                // Find the time between now and the launch date:
+                var timeToLaunch = countDownDate - now;
+
+                // Time calculations for days, hours, minutes and seconds:
+                var days = Math.floor(timeToLaunch / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((timeToLaunch % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((timeToLaunch % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((timeToLaunch % (1000 * 60)) / 1000);
+
+                // Display the result in different p elements:
+                document.getElementById("days").innerHTML = "DAYS: " + days;
+                document.getElementById("hours").innerHTML = "HOURS: " + hours;
+                document.getElementById("minutes").innerHTML = "MINUTES: " + minutes;
+                document.getElementById("seconds").innerHTML = "SECONDS: " + seconds;
+
+                // If the count down is finished, the shop is live:
+                if (distance < 0) {
+                    clearInterval(second);
+                    document.getElementById("live").innerHTML = "SHOP IS LIVE";
+                }
+            }, 1000);
+        </script>
+
+        <img src="assets/cringy_release.png" />
+
+        <p>July 4th. Save the date.</p>
+        <div class="disclosure">
+            <h3>Subscribe to our Newsletter for shop updates: </h3>
+            <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="post">
+                <div class="container" style="background-color: black">
+                    <input type="text" placeholder="Name" name="name" required />
+                    <input type="text" placeholder="Email address" name="mail" required />
+                    <input type="submit" value="Subscribe" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
